@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar flex justify-center items-center">
+            <h1 class="text-3xl font-bold py-11">Grads on Hire</h1>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <div class="cont flex justify-center items-center mt-4">
+            <div class="conatiner border-4 border-purple-500 rounded-2xl py-10 px-5 shadow-2xl my-5">
+                <p class="">Personal information</p>
+                <form action="./final.html" method="post">
+                    <p class="mt-2">Full name</p>
+                    <input class="rounded-md border px-4 py-1 border-black mb-6 hover:border-orange-500" type="text"
+                        id="name" name="name" placeholder="Name" required size="70">
+                    <p>Mobile Number</p>
+                    <input class="rounded-md border px-4 py-1 border-black hover:border-orange-500 mb-6" type="text"
+                        class="box" id="phno" name="phno" placeholder="Permanent Mobile Number" required size="30">
+                    <input class="rounded-md border px-4 py-1 border-black hover:border-orange-500 mb-6" type="text"
+                        class="box" id="phno" name="phno" placeholder="Alternate Mobile Number" required size="30">
+                    <p>Email Id</p>
+                    <input class="rounded-md border px-4 py-1 border-black mb-6 hover:border-orange-500" type="text"
+                        id="email" name="email" placeholder="Email" required size="70">
+                    <hr>
+                    <p class="mt-5">Your profile</p>
+                    <textarea class="rounded-md border px-4 py-1 border-black mb-6 mt-2 ml-4 hover:border-orange-500 resize-none"
+                        name="explain" id="ex" cols="30" rows="10" placeholder="Introduce yourself" row="4"
+                        col="5"></textarea>
+                    <textarea class="rounded-md border px-4 py-1 border-black mb-6 hover:border-orange-500 resize-none"
+                        name="explain" id="ex" cols="30" rows="10" placeholder="Brief us about your skills" row="4"
+                        col="5"></textarea>
+                    <p class="">Resume : 
+                        <input type="file">
+                    </p>
+                    <button
+                        class="rounded-md px-4 py-1 bg-purple-500 ml-64 hover:bg-purple-700 hover:text-white" onclick="window.location.href = 'final.html';">Apply</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

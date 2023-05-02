@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar flex items-center justify-center">
+            <h1 class="text-3xl font-bold py-11">Grads on Hire</h1>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <div class="cont flex justify-center items-center mt-3">
+            <div class="conatiner flex justify-center border-4 border-orange-600 rounded-2xl py-10 px-5 shadow-2xl">
+
+                <form action="./Login" method="post">
+                    <h1 class="text-2xl font-bold ml-44">REGISTER YOURSELF</h1>
+                    <p>Full name</p>
+                    <input class="rounded-md border px-4 py-1 border-black mb-6 hover:border-orange-500" type="text"
+                        id="name" name="name" placeholder="Name" required size="70">
+                    <p>Address</p>
+                    <input class="rounded-md border px-4 py-1 border-black mb-6 hover:border-orange-500" type="address"
+                        id="address" name="address" placeholder="Full address" required size="70">
+                    <p>Mobile Number</p>
+                    <input class="rounded-md border px-4 py-1 border-black hover:border-orange-500 mb-6" type="text"
+                        class="box" id="phno" name="phno" placeholder="Permanent Mobile Number" required size="30">
+                    <input class="rounded-md border px-4 py-1 border-black hover:border-orange-500 mb-6" type="text"
+                        class="box" id="phnoo" name="phnoo" placeholder="Alternate Mobile Number" required size="30">
+                    <p>Email Id</p>
+                    <input class="rounded-md border px-4 py-1 border-black mb-6 hover:border-orange-500" type="text"
+                        id="email" name="email" placeholder="Email" required size="70">
+                    <p>Gender</p>
+                    <label class="mr-5" for="sectionida">
+                        <input class="" type="radio" value="Scetion a" name="scetion" id="sectionida">Male
+                    </label>
+                    <label class="mr-5" for="sectionidb">
+                        <input type="radio" value="Scetion a" name="scetion" id="sectionidb">Female
+                    </label>
+                    <label for="sectionidc">
+                        <input class="mb-6" type="radio" value="Scetion a" name="scetion" id="sectionidc">Other
+                    </label>
+                    <p>Nationality</p>
+                    <select class="rounded-md px-2 py-1 border border-black cursor-pointer mb-6" name="nation" id="nation"
+                        required>
+                        <option value="">Choose nationality</option>
+                        <option value="">Indian</option>
+                        <option value="">other</option>
+                    </select>
+                    <p>Password</p>
+                    <input class="rounded-md border px-4 py-1 border-black mb-6 hover:border-orange-500" type="password"
+                        id="password1" name="password" placeholder="Password" required size="30">
+                        <input type="checkbox" onclick="myFunctionn()">Show Password <br>
+                        <input class="rounded-md border px-4 py-1 border-black mb-6 hover:border-orange-500" type="password"
+                        id="password2" name="password" placeholder="Confirm Password" required size="30">
+                        <input type="checkbox" onclick="myFunction()">Show Password <br>
+                    <br>
+                    <P>Bio</P>
+                    <input class="rounded-md border px-4 py-1 border-black mb-6 hover:border-orange-500 resize-none"
+                        name="explain" id="ex" cols="30" rows="10" placeholder="explain why you want to join" required size="70"><br>
+                    <select class="rounded-md px-2 py-1 border border-black cursor-pointer mb-6" name="wt" id="workst"
+                        required>
+                        <option value="">Work Status</option>
+                        <option value="">I'm Experienced</option>
+                        <option value="">I'm a Fresher</option>
+                    </select>
+                    <br>
+                    <button class="rounded-md px-4 py-1 bg-orange-600 border border-black ml-56 hover:bg-orange-800 hover:text-white" onclick="window.location.href = 'Login.html';">Create Account</button>
+                    <br><a class="text-orange-600 hover:text-orange-800 ml-56" href="/Login.html">Already a user?Login</a>
+                </form>
+                
+            </div>
+        </div>
+        <script>
+function myFunctionn() {
+  var x = document.getElementById("password1");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+function myFunction() {
+    var x = document.getElementById("password2");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+</script>
+    </main>
+</body>
+
+</html>

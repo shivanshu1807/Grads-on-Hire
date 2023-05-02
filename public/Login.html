@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar flex items-center justify-center">
+            <h1 class="text-3xl font-bold py-11">Grads on Hire</h1>
+        </div>
+    </header>
+    <main>
+        <div class="cont flex justify-center items-center">
+            <div class="conatiner flex justify-center border-4 border-orange-600 rounded-2xl py-10 px-5 shadow-2xl">
+                <form action="./Home" method="post">
+                    <h1 class="text-2xl font-bold ml-60">LOGIN</h1>
+                    <p>Email Id</p>
+                    <input class="rounded-md border px-4 py-1 border-black mb-6 hover:border-orange-500" type="text"
+                        id="email" name="email" placeholder="Email" required size="70">
+                    <p>Password</p>
+                    <input class="rounded-md border px-4 py-1 border-black mb-6 hover:border-orange-500" type="text"
+                        id="password" name="password" placeholder="Password" required size="70">
+                        <br>
+                    <button class="bt1 bg-purple-500 rounded-lg px-4 py-1 hover:text-white hover:bg-purple-700" onclick="window.location.href = 'Home.html';">Login</button>
+                </form>
+    </main>
+</body>
+
+</html>
